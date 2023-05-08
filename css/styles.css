@@ -625,8 +625,8 @@ left: calc(50% - 292px);
 }
 .modal-close-btn {
 position: absolute;
-top: -24px;
-right: -24px;
+top: 24px;
+right: 24px;
 
   background: #E7E9FC;
   width: 24px;
