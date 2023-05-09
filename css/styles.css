@@ -839,8 +839,8 @@ button {
   width: calc((100% - 48px) / 3);
 }
 
-.card-set-item:hover, .overlay-text
-.card-set-item:focus .overlay-text {
+.card-link:hover, .overlay-text
+.card-link:focus .overlay-text {
   transform: translateY(0);
 }
 
