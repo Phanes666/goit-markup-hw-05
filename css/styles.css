@@ -20,8 +20,8 @@ html {
   --indent: 24px;
   --items: 9;
 
---anim-fast: 300ms ease;
---anim-slow: 800ms ease;
+  --anim-fast: 300ms ease;
+  --anim-slow: 800ms ease;
 
   --header-idx: 10;
   --modal-idx: 100;
@@ -99,13 +99,12 @@ button {
   margin-left: auto;
   margin-right: auto; */
 
-
   position: fixed;
   top: 0;
 
-z-index: var(--header-idx);
+  z-index: var(--header-idx);
 
-width: 100%;
+  width: 100%;
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
   align-items: center;
@@ -115,10 +114,7 @@ width: 100%;
 }
 
 .header-nav-link {
-
-
-position: relative;
-
+  position: relative;
 
   display: block;
   font-weight: 500;
@@ -132,13 +128,12 @@ position: relative;
 }
 
 .header-nav-link::after {
- 
-  content: '';
+  content: "";
 
-position: absolute;
-bottom: 0;
-left: 0;
-bottom: -1px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  bottom: -1px;
   display: block;
   width: 100%;
   height: 4px;
@@ -148,9 +143,7 @@ bottom: -1px;
 
 /* .....ACTIVE.......*/
 .header-nav-link.active::after {
-
-  background: #404BBF;
-
+  background: #404bbf;
 }
 /* ................ */
 .header-logo {
@@ -249,7 +242,6 @@ bottom: -1px;
 }
 
 .hero-button {
-
   font-weight: 500;
   font-style: normal;
   font-size: 16px;
@@ -271,15 +263,13 @@ bottom: -1px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--bg-color-darkblue-hover);
 }
-
-
 
 /* section One Feature */
 .features {
@@ -372,7 +362,6 @@ bottom: -1px;
 .three-section {
   background-color: #f4f4fd;
   padding: 120px 0;
-
 }
 .three-section-title {
   font-family: "Roboto";
@@ -435,7 +424,6 @@ bottom: -1px;
   justify-content: center;
   align-items: center;
   gap: 24px;
-
 }
 .pro-icons-item {
 }
@@ -488,7 +476,6 @@ bottom: -1px;
   justify-content: center;
   align-items: center;
   gap: 24px;
-  
 }
 
 .custom-item {
@@ -507,8 +494,8 @@ bottom: -1px;
   border-radius: 4px;
   color: var(--color-customer-icon);
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .custom-icon {
@@ -530,7 +517,6 @@ bottom: -1px;
   display: inline-block;
   align-items: center;
   margin-right: 120px;
-
 }
 .social-container {
   display: block;
@@ -596,7 +582,6 @@ bottom: -1px;
 
   align-items: center;
   gap: 16px;
-  
 }
 .footer-icons-item {
   width: 40px;
@@ -625,13 +610,10 @@ bottom: -1px;
   background-color: var(--color-icon-hover);
 }
 
-
 /* MODAL WINDOW */
 
-
-
 .backdrop {
-   /* display: none; */
+  /* display: none; */
   position: fixed;
   top: 0;
   left: 0;
@@ -643,8 +625,8 @@ bottom: -1px;
 
   background: rgba(46, 47, 66, 0.4);
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .is-hidden {
@@ -657,72 +639,59 @@ bottom: -1px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-transition-delay: 250ms;
-
+  transition-delay: 250ms;
 }
 
 .modal {
-position: absolute;
-top: calc(50%);
-left: calc(50%);
-transform: translateX(-50%) translateY(-50%);
-
+  position: absolute;
+  top: calc(50%);
+  left: calc(50%);
+  transform: translateX(-50%) translateY(-50%);
 
   width: 408px;
   min-height: 576px;
-  background: #FCFCFC;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 
-  0px 1px 3px rgba(0, 0, 0, 0.12), 
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  background: #fcfcfc;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-
 }
-
 
 .backdrop.is-hidden .modal {
   opacity: 0;
   transform: translateX(-50%) translateY(-70%);
-transition-delay: 0ms;
-
+  transition-delay: 0ms;
 }
 .modal-close-btn {
-position: absolute;
-top: 24px;
-right: 24px;
-width: 24px;
-height: 24px;
-padding: 0;
-border-radius: 50%;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border-radius: 50%;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-display: flex;
-align-items: center;
-justify-content: center;
-
-
-  background-color: #E7E9FC;
+  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   background-color: #404bbf;
   fill: #ffffff;
-  border: none; 
-
+  border: none;
 }
 
 .modal-close-icon {
- transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 /* PORTFOLIO*/
 
@@ -775,7 +744,6 @@ justify-content: center;
   border-radius: 4px;
 }
 .btn {
-  
 }
 .btn:hover,
 .btn:focus {
@@ -791,42 +759,34 @@ justify-content: center;
 }
 
 .overlay {
-position: absolute;
-top: 0;
-left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
 
-transform: translateY(100%);
+  transform: translateY(100%);
 
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 
-padding: 40px 32px;
+  padding: 40px 32px;
 
-background-color: #4D5AE5;
+  background-color: #4d5ae5;
 
-transition: transform var(--anim-fast);
-
+  transition: transform var(--anim-fast);
 }
 
 .card-set-item:hover .overlay {
   transform: translateY(0);
-
-
-
 }
 
 .overlay-text {
-
   font-size: 16px;
   line-height: 1.5;
 
   letter-spacing: 0.02em;
 
-
-color: var(--button-backgroud);
+  color: var(--button-backgroud);
 }
-
-
 
 .card-title-name {
   font-family: "Roboto";
@@ -864,14 +824,8 @@ color: var(--button-backgroud);
   row-gap: 48px;
 }
 .card-set-item {
-  
   width: calc((100% - 48px) / 3);
 }
-
-
-
-
-
 
 .app {
   padding: 32px 16px;
